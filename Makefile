@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-REPOSITORY := quay.io/prometheus
+REPOSITORY := rfratto
 NAME       := golang-builder
 VARIANTS   ?= base main arm powerpc mips s390x
 LATEST     ?= 1.14

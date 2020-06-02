@@ -38,7 +38,7 @@ Therefore a `Makefile` with `build` and `test` targets is needed into the root o
 ### main/latest tag
 
 ```
-docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:main \
+docker run --rm -ti -v $(pwd):/app rfratto/golang-builder:main \
     -i "github.com/prometheus/prometheus" \
     -p "linux/amd64 linux/386 darwin/amd64 darwin/386 windows/amd64 windows/386 freebsd/amd64 freebsd/386 openbsd/amd64 openbsd/386 netbsd/amd64 netbsd/386 dragonfly/amd64"
 ```
@@ -46,7 +46,7 @@ docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:main \
 ### arm tag
 
 ```
-docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:arm \
+docker run --rm -ti -v $(pwd):/app rfratto/golang-builder:arm \
     -i "github.com/prometheus/prometheus" \
     -p "linux/arm linux/arm64 freebsd/arm openbsd/arm netbsd/arm"
 ```
@@ -54,7 +54,7 @@ docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:arm \
 ### powerpc tag
 
 ```
-docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:powerpc \
+docker run --rm -ti -v $(pwd):/app rfratto/golang-builder:powerpc \
     -i "github.com/prometheus/prometheus" \
     -p "linux/ppc64 linux/ppc64le"
 ```
@@ -64,7 +64,7 @@ docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:powerpc \
 mips64/mips64le cross-build is currently available with golang 1.6.
 
 ```
-docker run --rm -ti -v $(pwd):/app quay.io/prometheus/golang-builder:mips \
+docker run --rm -ti -v $(pwd):/app rfratto/golang-builder:mips \
     -i "github.com/prometheus/prometheus" \
     -p "linux/mips64 linux/mips64le"
 ```

@@ -1,4 +1,4 @@
-FROM        quay.io/prometheus/golang-builder:1.14-base
+FROM        rfratto/golang-builder:1.14-base
 MAINTAINER  The Prometheus Authors <prometheus-developers@googlegroups.com>
 
 RUN \
